@@ -152,15 +152,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---- Footer year ---- */
   document.getElementById('year').textContent = new Date().getFullYear();
-
-  /* ---- Testimonials: simple auto-scroll on mobile ---- */
-  const track = document.getElementById('testiTrack');
-  if (track && window.innerWidth < 860) {
-    let idx = 0;
-    const cards = track.querySelectorAll('.testi-card');
-    setInterval(() => {
-      idx = (idx + 1) % cards.length;
-      cards[idx].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-    }, 4500);
-  }
 });
