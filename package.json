@@ -1,0 +1,8 @@
+{
+  "name": "mrbrasa-web",
+  "version": "1.0.0",
+  "description": "Sitio web de Mr. Brasa - Pollería en Huancayo",
+  "scripts": {
+    "start": "npx serve -s . -l $PORT"
+  }
+}
