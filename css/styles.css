@@ -251,6 +251,7 @@ p { margin: 0 0 1em; }
 }
 .menu-tab.is-active, .menu-tab:hover { background: var(--charcoal); color: var(--cream); }
 .menu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 26px; }
+.menu-grid[hidden] { display: none !important; }
 .menu-card {
   position: relative; background: #fff; border-radius: var(--radius); overflow: hidden;
   box-shadow: 0 10px 24px -14px rgba(0,0,0,0.25); transition: transform .35s var(--ease), box-shadow .35s var(--ease);
