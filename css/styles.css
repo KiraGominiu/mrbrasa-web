@@ -155,10 +155,14 @@ p { margin: 0 0 1em; }
 }
 .hero__bg {
   position: absolute; inset: 0;
+  background-size: cover; background-position: center 30%;
+  background-color: var(--charcoal);
+}
+.hero__overlay {
+  position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse at 30% 20%, rgba(228,19,44,0.35), transparent 55%),
-    radial-gradient(ellipse at 80% 80%, rgba(242,169,59,0.18), transparent 50%),
-    linear-gradient(160deg, #1c1512 0%, #100c0a 70%);
+    linear-gradient(180deg, rgba(16,12,10,0.55) 0%, rgba(16,12,10,0.75) 55%, rgba(16,12,10,0.95) 100%),
+    radial-gradient(ellipse at 30% 15%, rgba(228,19,44,0.25), transparent 55%);
 }
 .hero__grate {
   position: absolute; inset: 0; opacity: .12; pointer-events: none;
@@ -200,9 +204,8 @@ p { margin: 0 0 1em; }
 @media (max-width: 860px) { .grid-2 { grid-template-columns: 1fr; gap: 40px; } }
 
 .about__image {
-  aspect-ratio: 4/5; border-radius: var(--radius); background:
-    linear-gradient(160deg, var(--ember-dark), var(--charcoal)),
-    repeating-linear-gradient(45deg, rgba(255,255,255,0.03) 0 2px, transparent 2px 14px);
+  aspect-ratio: 4/5; border-radius: var(--radius);
+  background-size: cover; background-position: center;
   box-shadow: var(--shadow-soft);
 }
 .owner-card {
@@ -267,6 +270,22 @@ p { margin: 0 0 1em; }
 .menu-card__badge--fire { background: var(--ember); }
 .menu-card__badge--gold { background: var(--gold); color: var(--charcoal); }
 .menu-card__badge--chef { background: var(--charcoal); }
+
+/* Desayunos panel */
+.menu-grid--breakfast { grid-template-columns: 1fr 1fr; align-items: start; }
+@media (max-width: 760px) { .menu-grid--breakfast { grid-template-columns: 1fr; } }
+.breakfast-flyer img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-soft); }
+.breakfast-list h3 { font-size: 1.2rem; margin-bottom: 14px; color: var(--charcoal); }
+.breakfast-items { margin: 0 0 26px; }
+.breakfast-items li {
+  display: flex; justify-content: space-between; align-items: center; gap: 10px;
+  padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.08); font-weight: 600;
+}
+.breakfast-items li small { font-family: var(--font-mono); font-weight: 400; color: var(--stone-dark); font-size: .78rem; }
+
+/* =========== Brand banner strip =========== */
+.brand-banner { width: 100%; overflow: hidden; background: #fff; }
+.brand-banner img { width: 100%; height: auto; display: block; max-height: 420px; object-fit: cover; }
 
 /* =========== Promociones =========== */
 .promo {

@@ -120,7 +120,8 @@
 
   <!-- 1. HERO -->
   <section class="hero" id="inicio">
-    <div class="hero__bg" role="img" aria-label="Fachada iluminada de Mr. Brasa en Huancayo"></div>
+    <div class="hero__bg" style="background-image:url('assets/images/real/hero-render.jpg')" role="img" aria-label="Fachada iluminada de Mr. Brasa en Huancayo"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
     <div class="hero__grate" aria-hidden="true"></div>
     <div class="hero__content" data-aos="fade-up">
       <p class="eyebrow eyebrow--light">Pollería · Parrillas · Huancayo</p>
@@ -149,7 +150,7 @@
       <div data-aos="fade-right">
         <p class="eyebrow">Quiénes somos</p>
         <h2 class="section__title">Fuego de carbón, <br>recetas de casa</h2>
-        <p class="section__text">Mr. Brasa nació en Huancayo con una idea simple: el pollo a la brasa hecho como en familia, dorado lento al carbón hasta que la piel queda crocante y la carne, jugosa. Cada pedido sale de nuestra cocina en Av. Giraldez con la misma receta, el mismo cuidado y las mismas ganas de que vuelvas.</p>
+        <p class="section__text">Mr. Brasa abrió sus puertas este 2026 en Huancayo con una idea simple: el pollo a la brasa hecho como en familia, dorado lento al carbón hasta que la piel queda crocante y la carne, jugosa. Somos un negocio nuevo, pero con la receta y el cuidado de siempre — cada pedido sale de nuestra cocina en Av. Giraldez con las mismas ganas de que vuelvas.</p>
         <p class="section__text">Detrás del mostrador está <strong>Melissa Hinostroza Ramírez</strong>, al frente de la operación diaria, cuidando que cada pollo, cada porción de papas y cada salsa salga como debe salir: con sabor de verdad.</p>
         <div class="owner-card">
           <div class="owner-card__avatar" aria-hidden="true"><i class="fa-solid fa-fire-burner"></i></div>
@@ -159,7 +160,7 @@
           </div>
         </div>
       </div>
-      <div class="about__image" data-aos="fade-left" role="img" aria-label="Interior de Mr. Brasa, ambiente rojo y negro con parrillas a la vista"></div>
+      <div class="about__image" data-aos="fade-left" style="background-image:url('assets/images/real/fachada-dia.jpg')" role="img" aria-label="Fachada de Mr. Brasa en Av. Giraldez, Huancayo"></div>
     </div>
   </section>
 
@@ -230,6 +231,7 @@
 
       <div class="menu-tabs" role="tablist" aria-label="Categorías del menú">
         <button class="menu-tab is-active" data-target="cat-brasa" role="tab" aria-selected="true">Pollo a la Brasa</button>
+        <button class="menu-tab" data-target="cat-desayunos" role="tab" aria-selected="false">Desayunos</button>
         <button class="menu-tab" data-target="cat-acomp" role="tab" aria-selected="false">Acompañamientos</button>
         <button class="menu-tab" data-target="cat-bebidas" role="tab" aria-selected="false">Bebidas</button>
       </div>
@@ -313,6 +315,33 @@
         </article>
       </div>
 
+      <div class="menu-grid menu-grid--breakfast" id="cat-desayunos" hidden>
+        <div class="breakfast-flyer" data-aos="fade-right">
+          <img src="assets/images/real/desayunos-flyer.jpg" alt="Volante de desayunos Mr. Brasa: sándwich de pollo y sándwich de pollo a la brasa" loading="lazy">
+        </div>
+        <div class="breakfast-list" data-aos="fade-left">
+          <h3>Sándwiches</h3>
+          <ul class="breakfast-items">
+            <li><span>Sándwich de Pollo</span><small>Precio a consultar</small></li>
+            <li><span>Sándwich de Pollo a la Brasa</span><small>Precio a consultar</small></li>
+            <li><span>Sándwich de Huevo</span><small>Precio a consultar</small></li>
+            <li><span>Sándwich de Salchicha</span><small>Precio a consultar</small></li>
+            <li><span>Sándwich de Palta</span><small>Precio a consultar</small></li>
+            <li><span>Sándwich con Chorizo</span><small>Precio a consultar</small></li>
+            <li><span>Pan con Mantequilla</span><small>Precio a consultar</small></li>
+            <li><span>Pan con Mermelada</span><small>Precio a consultar</small></li>
+          </ul>
+          <h3>Para acompañar</h3>
+          <ul class="breakfast-items">
+            <li><span>Jugos naturales, frescos y energéticos</span></li>
+            <li><span>Mates, café, milo y milo con leche</span></li>
+          </ul>
+          <a class="btn btn--ember btn--sm" target="_blank" rel="noopener" href="https://wa.me/51932893659?text=Hola%2C%20quiero%20consultar%20por%20los%20desayunos">
+            <i class="fa-brands fa-whatsapp"></i> Consultar y pedir
+          </a>
+        </div>
+      </div>
+
       <div class="menu-grid" id="cat-acomp" hidden>
         <article class="menu-card" data-aos="fade-up">
           <div class="menu-card__img" style="background-image:url('assets/images/menu/papas.jpg')" role="img" aria-label="Porción de papas fritas"></div>
@@ -378,6 +407,11 @@
     </div>
   </section>
 
+  <!-- BANNER DE MARCA -->
+  <div class="brand-banner" data-aos="fade-up">
+    <img src="assets/images/real/banner-mascotas.jpg" alt="Mr. Brasa - Pollo a la brasa y parrillas, sabor que nos une" loading="lazy">
+  </div>
+
   <!-- 8. PROMOCIONES -->
   <section class="promo" id="promociones">
     <div class="promo__inner" data-aos="zoom-in">
@@ -416,7 +450,7 @@
         <p>experiencia que buscamos en cada visita</p>
       </div>
     </div>
-    <p class="stats__note">* Cifras de referencia — Lo reemplazare por tus datos reales cuando lo tenga (pedidos atendidos, años de experiencia, calificación en Google, etc.)</p>
+    <p class="stats__note">* Cifras de referencia — reemplázalas por tus datos reales cuando los tengas (pedidos atendidos, años de experiencia, calificación en Google, etc.)</p>
   </section>
 
   <!-- 14. PROCESO DE COMPRA -->
@@ -467,7 +501,7 @@
         <a href="assets/images/gallery/pollo2.jpg" class="gallery__item gallery__item--tall" data-aos="fade-up" data-aos-delay="60"><img src="assets/images/gallery/pollo2.jpg" alt="Medio pollo a la brasa recién salido del carbón" loading="lazy"></a>
         <a href="assets/images/gallery/local.jpg" class="gallery__item" data-aos="fade-up" data-aos-delay="120"><img src="assets/images/gallery/local.jpg" alt="Interior del local Mr. Brasa" loading="lazy"></a>
       </div>
-      <p class="gallery__note">Reemplazare estas imágenes por tus fotografías reales del local y los platos en <code>/assets/images/gallery/</code>.</p>
+      <p class="gallery__note">Reemplaza estas imágenes por tus fotografías reales del local y los platos en <code>/assets/images/gallery/</code>.</p>
     </div>
   </section>
 
@@ -493,7 +527,7 @@
           <span class="testi-card__name">— Cliente de Huancayo</span>
         </div>
       </div>
-      <p class="gallery__note">Testimonios de ejemplo — Lo reemplazare por reseñas reales de tus clientes (se pueden copiar de Google Maps citando el nombre del cliente).</p>
+      <p class="gallery__note">Testimonios de ejemplo — reemplázalos por reseñas reales de tus clientes (puedes copiarlas de Google Maps citando el nombre del cliente).</p>
     </div>
   </section>
 

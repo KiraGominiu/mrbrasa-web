@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---- Menu tabs ---- */
   const tabs = document.querySelectorAll('.menu-tab');
-  const panels = { 'cat-brasa': document.getElementById('cat-brasa'), 'cat-acomp': document.getElementById('cat-acomp'), 'cat-bebidas': document.getElementById('cat-bebidas') };
+  const panels = { 'cat-brasa': document.getElementById('cat-brasa'), 'cat-desayunos': document.getElementById('cat-desayunos'), 'cat-acomp': document.getElementById('cat-acomp'), 'cat-bebidas': document.getElementById('cat-bebidas') };
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
       tabs.forEach(t => { t.classList.remove('is-active'); t.setAttribute('aria-selected', 'false'); });
