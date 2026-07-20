@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---- Menu tabs ---- */
   const tabs = document.querySelectorAll('.menu-tab');
+  const menuTabsEl = document.querySelector('.menu-tabs');
   const panels = { 'cat-brasa': document.getElementById('cat-brasa'), 'cat-desayunos': document.getElementById('cat-desayunos'), 'cat-acomp': document.getElementById('cat-acomp'), 'cat-bebidas': document.getElementById('cat-bebidas') };
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -63,6 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
         el.hidden = key !== tab.dataset.target;
       });
       if (window.AOS) AOS.refresh();
+      // Bring the newly selected category into view (accounting for the sticky navbar height)
+      const navHeight = document.getElementById('nav').offsetHeight;
+      const targetTop = menuTabsEl.getBoundingClientRect().top + window.scrollY - navHeight - 16;
+      window.scrollTo({ top: targetTop, behavior: 'smooth' });
     });
   });
 
