@@ -285,7 +285,7 @@ p { margin: 0 0 1em; }
 .breakfast-items li small { font-family: var(--font-mono); font-weight: 400; color: var(--stone-dark); font-size: .78rem; }
 
 /* =========== Brand banner strip =========== */
-.brand-banner { width: 100%; overflow: hidden; background: #fff; }
+.brand-banner { width: 100%; overflow: hidden; background: #fff; box-shadow: 0 8px 24px -8px rgba(0,0,0,0.25); position: relative; z-index: 1; }
 .brand-banner img { width: 100%; height: auto; display: block; max-height: 420px; object-fit: cover; }
 
 /* =========== Promociones =========== */
