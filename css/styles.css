@@ -286,7 +286,7 @@ p { margin: 0 0 1em; }
 
 /* =========== Brand banner strip =========== */
 .brand-banner { width: 100%; overflow: hidden; background: #fff; box-shadow: 0 8px 24px -8px rgba(0,0,0,0.25); position: relative; z-index: 1; }
-.brand-banner img { width: 100%; height: auto; display: block; max-height: 420px; object-fit: cover; }
+.brand-banner img { width: 100%; height: auto; display: block; }
 
 /* =========== Promociones =========== */
 .promo {
